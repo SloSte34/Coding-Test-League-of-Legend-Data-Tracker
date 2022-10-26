@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import MostInfoList from '../components/MostInfoList';
 import PlayerInfo from '../components/PlayeInfo';
 
 const Main = () => {
@@ -26,6 +27,11 @@ const Main = () => {
         role={playerData.role}
         laning={playerData.laning}
         kda={playerData.kda}
+        tierHistory={playerData.tierHistory}
+      />
+      <MostInfoList
+        mostChamp={playerData.mostChampions}
+        mostLane={playerData.mostLanes}
       />
     </>
   );
